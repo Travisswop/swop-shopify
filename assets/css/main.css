@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+a:hover {
+  color: #965cff;
+}
