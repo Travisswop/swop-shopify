@@ -64,16 +64,14 @@
 }
 .cart-position {
   position: relative;
-  font-weight: 600;
-  font-size: 20px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .cart-position-inside {
   position: absolute;
-  right: -12px;
-  top: -9px;
+  left: 18px;
+  top: -10px;
   height: 18px;
   width: 18px;
   background-color: #ff4500;
@@ -84,6 +82,14 @@
   align-items: center;
   display: flex;
   border: solid #fff 2px;
+}
+.cart-position label {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 .cart-position img {
   height: 25px;
