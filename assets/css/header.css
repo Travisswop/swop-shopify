@@ -52,8 +52,8 @@
   align-items: center;
 }
 .nav-logo-size {
-  height: 25px;
-  width: auto;
+  height: auto;
+  width: 8rem;
 }
 .nav-bottom h2,
 .nav-bottom h3 {
