@@ -41,8 +41,7 @@
   border-bottom-right-radius: 15px;
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  margin: auto 50px;
   z-index: 5;
 }
 .nav-bottom {
@@ -218,6 +217,11 @@ button.cross-button {
 }
 /* mobile nav end */
 /* nav bar end */
+@media only screen and (min-width: 992px) and (max-width: 1022px) {
+  .nav-outside {
+    margin: auto 25px;
+  }
+}
 
 @media only screen and (min-width: 350px) and (max-width: 991px) {
   .nav-top {
@@ -279,6 +283,9 @@ button.cross-button {
   }
   .app-logo-container {
     display: flex;
+  }
+  .nav-outside {
+    margin: auto 0px;
   }
 }
 @media only screen and (min-width: 350px) and (max-width: 550px) {
