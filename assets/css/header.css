@@ -66,11 +66,16 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  align-items: center;
 }
+.cart-position a {
+  display: flex;
+}
+
 .cart-position-inside {
   position: absolute;
   left: 18px;
-  top: -10px;
+  top: -5px;
   height: 18px;
   width: 18px;
   background-color: #ff4500;
@@ -82,7 +87,7 @@
   display: flex;
   border: solid #fff 2px;
 }
-.cart-position label {
+.cart-position button {
   background-color: #000;
   color: #fff;
   font-size: 12px;
