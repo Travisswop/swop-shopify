@@ -1,6 +1,10 @@
+:root {
+  --marginvalue: 50px;
+}
+
 h1 {
-  margin-top: 50px;
-  font-size: 70px;
+  margin-top: var(--marginvalue);
+  font-size: 85px;
   font-weight: 600;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -13,16 +17,16 @@ h1 span {
   justify-content: center;
 }
 video {
-  width: 700px;
+  width: 1000px;
   height: auto;
-  margin-top: 50px;
+  margin-top: var(--marginvalue);
   border-radius: 5px;
   box-shadow: 5px 5px 20px 0px #00000040;
 }
 .shop-now-button {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: var(--marginvalue);
 }
 .shop-now-button a {
   display: flex;
@@ -48,7 +52,7 @@ video {
 .interactable-brand-info {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: var(--marginvalue);
   gap: 15px;
 }
 .brand-info-reward h3 {
@@ -97,7 +101,13 @@ video {
   display: flex;
   max-width: 650px;
   justify-content: center;
-  margin: 50px auto 0px auto;
+  margin: var(--marginvalue) auto 0px auto;
+}
+.product-row-section-reverse {
+  display: flex;
+  max-width: 650px;
+  justify-content: center;
+  margin: var(--marginvalue) auto 0px auto;
 }
 .section-text {
   display: flex;
@@ -143,8 +153,8 @@ video {
 }
 .how-setup-interact {
   text-align: center;
-  width: 990px;
-  margin: 50px auto 0px auto;
+  width: 1350px;
+  margin: var(--marginvalue) auto 0px auto;
 }
 .how-setup-interact h2 {
   font-size: 25px;
@@ -185,15 +195,15 @@ video {
   color: #5e5e5e;
 }
 .interactive-frame {
-  background: url('../image/interactiveframe.png') center center no-repeat;
+  background: url("../image/interactiveframe.png") center center no-repeat;
   background-size: cover;
-  margin: 50px auto 0px auto;
+  margin: var(--marginvalue) auto 0px auto;
   border-radius: 25px;
   display: flex;
   gap: 20px;
-  padding: 75px 100px;
+  padding: 135px 100px;
   position: relative;
-  width: 990px;
+  width: 1350px;
 }
 .interactive-frame-text {
   color: #fff;
@@ -226,46 +236,346 @@ video {
 .interactive-frame-image {
   flex: 1;
 }
-@media only screen and (min-width: 992px) and (max-width: 1022px) {
+@media only screen and (min-width: 992px) and (max-width: 1375px) {
   .interactive-frame {
-    padding: 110px 60px;
+    width: 985px;
+    padding: 70px 60px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-setup-interact {
+    width: 985px;
+  }
   h1 {
     font-size: 60px;
   }
   video {
-    width: 95%;
+    width: 850px;
   }
-  .product-row-section {
-    grid-template-columns: repeat(
-      1,
-      1fr
-    ); /* One column layout for mobile view */
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 50px;
+  }
+  video {
+    width: 95%;
   }
   .section-text {
     grid-column-start: 1;
     text-align: center;
     padding: 0px 70px;
   }
-  .section-image {
-    grid-column-start: 1;
-  }
   .section-text-reverse {
-    /* grid-column-start: 1;
+    grid-column-start: 1;
     text-align: center;
-    padding: 0px 70px; */
-    display: none;
+    padding: 0px 70px;
+  }
+  .how-setup-interact {
+    width: 750px;
   }
   .how-setup-interact-cart {
-    gap: 15px;
+    gap: 10px;
   }
-  .section-image-reverse {
-    grid-column-start: 1;
+  .how-setup-interact-cart-inside p {
+    font-size: 13px;
+  }
+  .interactive-frame-text h3 {
+    font-size: 30px;
+  }
+  .interactive-frame-text div a {
+    font-size: 13px;
+  }
+  .interactive-frame-text div {
+    padding: 5px 15px;
+  }
+  .interactive-frame {
+    width: 750px;
+    padding: 44px 60px;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+  video {
+    width: 95%;
+  }
+  .section-text {
+    text-align: center;
+    padding: 0px 70px;
+  }
+  .section-text-reverse {
+    text-align: center;
+    padding: 0px 70px;
+  }
+  .how-setup-interact {
+    width: 550px;
+  }
+  .how-setup-interact p {
+    font-size: 12px;
+  }
+  .how-setup-interact-cart {
+    gap: 40px;
+    flex-direction: column;
+    margin: 25px auto 0px auto;
+  }
+  .how-setup-interact-cart-inside {
+    margin: auto auto;
+    width: 530px;
+  }
+  .how-setup-interact-cart-inside p {
+    font-size: 13px;
+  }
+  .interactive-frame-text h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .brand-info-reward {
+    height: 150px;
+    width: 240px;
+  }
+  .brand-info-wallet {
+    height: 150px;
+    width: 240px;
+  }
+  .interactive-frame-text div a {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .interactive-frame-text div {
+    padding: 5px 12px;
+    display: flex;
+  }
+  .interactive-frame-text p {
+    font-size: 10px;
+  }
+  .number-setup {
     display: none;
   }
   .interactive-frame {
-    padding: 110px 60px;
+    background: url("../image/interactiveframeMobile.png") center center
+      no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    gap: 0px;
+    padding: 35px 50px;
+    width: 550px;
+    height: 425px;
+  }
+  .interactive-frame-text {
+    gap: 5px;
+    position: absolute;
+    right: 90px;
+    top: 45px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 559px) {
+  :root {
+    --marginvalue: 25px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  video {
+    width: 95%;
+  }
+  .section-text {
+    text-align: center;
+    padding: 0px 70px;
+  }
+  .brand-info-reward h3,
+  .brand-info-wallet h3 {
+    font-size: 40px;
+  }
+
+  .brand-info-reward,
+  .brand-info-wallet {
+    height: 130px;
+    width: 160px;
+  }
+  .interactable-brand-info {
+    gap: 10px;
+  }
+  .section-text p,
+  .section-text-reverse p {
+    font-size: 14px;
+  }
+  .section-text h3,
+  .section-text-reverse h3 {
+    font-size: 22px;
+  }
+  .section-text-reverse {
+    text-align: center;
+    padding: 0px 70px;
+  }
+  .how-setup-interact {
+    width: 450px;
+  }
+  .how-setup-interact h2 {
+    font-size: 20px;
+  }
+  .shop-now-button a {
+    gap: 15px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  .how-setup-interact p {
+    font-size: 16px;
+  }
+  .how-setup-interact-cart {
+    gap: 20px;
+    flex-direction: column;
+    margin: 25px auto 0px auto;
+  }
+  .how-setup-interact-cart-inside {
+    margin: auto auto;
+    width: 440px;
+  }
+  .how-setup-interact-cart-inside p {
+    font-size: 13px;
+  }
+  .interactive-frame-text h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .interactive-frame-text div a {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .interactive-frame-text div {
+    padding: 5px 12px;
+    display: flex;
+  }
+  .interactive-frame-text p {
+    font-size: 10px;
+  }
+  .number-setup {
+    display: none;
+  }
+  .interactive-frame {
+    background: url("../image/interactiveframeMobile.png") center center
+      no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    gap: 0px;
+    padding: 35px 50px;
+    width: 440px;
+    height: 360px;
+  }
+  .interactive-frame-text {
+    gap: 5px;
+    position: absolute;
+    right: 38px;
+    top: 25px;
+  }
+  .product-row-section {
+    flex-direction: column;
+  }
+  .product-row-section-reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+  :root {
+    --marginvalue: 25px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  video {
+    width: 95%;
+  }
+  .section-text {
+    text-align: center;
+    padding: 0px 70px;
+  }
+  .brand-info-reward h3,
+  .brand-info-wallet h3 {
+    font-size: 40px;
+  }
+
+  .brand-info-reward,
+  .brand-info-wallet {
+    height: 130px;
+    width: 160px;
+  }
+  .interactable-brand-info {
+    gap: 10px;
+  }
+  .section-text p,
+  .section-text-reverse p {
+    font-size: 14px;
+  }
+  .section-text h3,
+  .section-text-reverse h3 {
+    font-size: 22px;
+  }
+  .section-text-reverse {
+    text-align: center;
+    padding: 0px 70px;
+  }
+  .how-setup-interact {
+    width: 350px;
+  }
+  .how-setup-interact h2 {
+    font-size: 20px;
+  }
+  .shop-now-button a {
+    gap: 15px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  .how-setup-interact p {
+    font-size: 12px;
+  }
+  .how-setup-interact-cart {
+    gap: 20px;
+    flex-direction: column;
+    margin: 25px auto 0px auto;
+  }
+  .how-setup-interact-cart-inside {
+    margin: auto auto;
+    width: 340px;
+  }
+  .how-setup-interact-cart-inside p {
+    font-size: 13px;
+  }
+  .interactive-frame-text h3 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .interactive-frame-text div a {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .interactive-frame-text div {
+    padding: 5px 12px;
+    display: flex;
+  }
+  .interactive-frame-text p {
+    font-size: 10px;
+  }
+  .number-setup {
+    display: none;
+  }
+  .interactive-frame {
+    background: url("../image/interactiveframeMobile.png") center center
+      no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    gap: 0px;
+    padding: 35px 50px;
+    width: 340px;
+    height: 260px;
+  }
+  .interactive-frame-text {
+    gap: 5px;
+    position: absolute;
+    right: 38px;
+    top: 10px;
+  }
+  .product-row-section {
+    flex-direction: column;
+  }
+  .product-row-section-reverse {
+    flex-direction: column-reverse;
   }
 }
